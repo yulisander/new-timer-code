@@ -19,6 +19,5 @@ class PrecisionTimer:
             print("Timer stopped.")
 
     def display(self):
-        # Эта часть кода станет причиной конфликта
-        mins, secs = divmod(self._elapsed, 60)
-        print(f"Elapsed: {int(mins):02d}:{secs:05.2f}")
+        total_seconds = self._elapsed
+        print(f'{{"total_seconds": {total_seconds:.3f}, "status": "stopped"}}')
