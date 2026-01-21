@@ -19,6 +19,8 @@ class PrecisionTimer:
             print("Timer stopped.")
 
     def display(self):
+
         hours, rem = divmod(self._elapsed, 3600)
         mins, secs = divmod(rem, 60)
         print(f"Elapsed: {int(mins):02d}:{secs:05.2f}")
+
